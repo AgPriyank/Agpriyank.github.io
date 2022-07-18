@@ -13,4 +13,8 @@ Hi! Welcome to my website. I started as a PhD student in the Industrial Engineer
 In 2021, I graduated from the University of Illinois Urbana-Champaign, where I was part of [Nan Jiang's](https://nanjiang.cs.illinois.edu/) RL theory group. 
 
 
-# Publications
+# Papers
+
+[***Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location***](https://arxiv.org/pdf/2204.01120.pdf)
+
+
