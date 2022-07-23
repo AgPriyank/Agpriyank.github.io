@@ -17,10 +17,22 @@ In 2021, I graduated from the University of Illinois Urbana-Champaign, where I w
 
 [***Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location***](https://arxiv.org/pdf/2204.01120.pdf)<br>
 Priyank Agrawal, Eric Balkanski, Vasilis Gkatzelis, Tingting Ou, and Xizhi Tan <br>
-*ACM EC 2022*
+*ACM EC 2022*<br>
 
+[***Improved Worst-Case Regret Bounds for Randomized Least-Squares Value Iteration***](https://arxiv.org/pdf/2010.12163.pdf)
+Priyank Agrawal, Jinglin Chen and Nan Jiang <br>
+*AAAI 2021*<br>
+
+[***Learning by Repetition: Stochastic Multi-armed Bandits under Priming Effect***](https://arxiv.org/pdf/2006.10356.pdf)
+Priyank Agrawal and Theja Tulabandhula <br> 
+*UAI 2020*<br>
+
+[***Incentivising Exploration and Recommendations for Contextual Bandits with Payments***](https://arxiv.org/pdf/2001.07853.pdf)
+Priyank Agrawal and Theja Tulabandhula <br>
+*EUMAS 2020*<br>
 
 # Preprints/Working Paper
 
-
+[***A Tractable Online Learning Algorithm for the Multinomial Logit Contextual Bandit***](https://arxiv.org/pdf/2011.14033.pdf)
+Priyank Agrawal, Theja Tulabandhula and Vashist Avadhanula <br> 
 
