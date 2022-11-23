@@ -15,6 +15,11 @@ In 2021, I graduated from the University of Illinois Urbana-Champaign with a Mas
 
 # Papers
 
+
+[***A Tractable Online Learning Algorithm for the Multinomial Logit Contextual Bandit***](https://arxiv.org/pdf/2011.14033.pdf)
+Priyank Agrawal, Theja Tulabandhula and Vashist Avadhanula 
+*to appear in EJOR*
+
 [***Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location***](https://arxiv.org/pdf/2204.01120.pdf)<br>
 Priyank Agrawal, Eric Balkanski, Vasilis Gkatzelis, Tingting Ou, and Xizhi Tan <br>
 *ACM EC 2022*
@@ -30,9 +35,4 @@ Priyank Agrawal and Theja Tulabandhula <br>
 [***Incentivising Exploration and Recommendations for Contextual Bandits with Payments***](https://arxiv.org/pdf/2001.07853.pdf)
 Priyank Agrawal and Theja Tulabandhula <br>
 *EUMAS 2020*
-
-# Preprints/Working Paper
-
-[***A Tractable Online Learning Algorithm for the Multinomial Logit Contextual Bandit***](https://arxiv.org/pdf/2011.14033.pdf)
-Priyank Agrawal, Theja Tulabandhula and Vashist Avadhanula 
 
