@@ -15,6 +15,9 @@ In 2021, I graduated from the University of Illinois Urbana-Champaign with a Mas
 
 # Papers
 
+[***Optimistic Q-learning for average reward and episodic reinforcement learning***](https://arxiv.org/abs/2407.13743)
+Priyank Agrawal, and Shipra Agrawal 
+*under review*
 
 [***A Tractable Online Learning Algorithm for the Multinomial Logit Contextual Bandit***](https://arxiv.org/pdf/2011.14033.pdf)
 Priyank Agrawal, Theja Tulabandhula and Vashist Avadhanula 
