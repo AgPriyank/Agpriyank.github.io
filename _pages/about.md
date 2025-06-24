@@ -28,8 +28,8 @@ In 2021, I graduated from the University of Illinois Urbana-Champaign with a Mas
 - **[Policy Gradient with Tree Search (PGTS)]()**  
   *Navdeep Kumar, Priyank Agrawal, Kfir Yehuda Levy, Shie Mannor*. ICLR Tiny Papers Track, 2025.
 
-- **[Learning-Augmented Mechanism Design](https://arxiv.org/abs/2202.04080)**  
-  *Priyank Agrawal et al.* ACM EC 2022; extended version accepted to *Mathematics of Operations Research*.
+- **[Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location](https://arxiv.org/abs/2202.04080)**  
+  *Priyank Agrawal, Eric Balkanski, Vasilis Gkatzelis, Tingting Ou, and Xizhi Tan* ACM EC 2022; extended version accepted to *Mathematics of Operations Research*.
 
 - **[A Tractable Online Learning Algorithm for the Multinomial Logit Contextual Bandit](https://arxiv.org/pdf/2011.14033.pdf)**  
   *Priyank Agrawal, Theja Tulabandhula, Vashist Avadhanula*. *European Journal of Operational Research*.
