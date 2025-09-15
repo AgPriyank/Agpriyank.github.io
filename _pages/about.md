@@ -7,7 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 new_right: true
-toc: false
 ---
 
 Hi! Welcome to my website. I started as a PhD student in the Industrial Engineering and Operations Research department of Columbia University. I work with the fabulous [Shipra Agrawal](http://www.columbia.edu/~sa3305/). I am excited by research questions under the broad umbrella of reinforcement learning and strategic behavior.
