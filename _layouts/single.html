@@ -73,18 +73,16 @@ layout: default
       {% include comments.html %}
     {% endif %}
   </article>
-  {% raw %}
-    {% if page.news_right or page.toc %}
-      <aside class="sidebar__right">
-        {% if page.news_right %}
-          {% include news.html %}
-        {% endif %}
-        {% if page.toc %}
-          {% include toc %}
-        {% endif %}
-      </aside>
-    {% endif %}
-  {% endraw %}
+  {% if page.news_right or page.toc %}
+    <aside class="sidebar__right">
+      {% if page.news_right %}
+        {% include news.html %}
+      {% endif %}
+      {% if page.toc %}
+        {% include toc %}
+      {% endif %}
+    </aside>
+  {% endif %}
 
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
