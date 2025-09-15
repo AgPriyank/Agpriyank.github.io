@@ -1,0 +1,8 @@
+# Add newest items to the top or let the template sort by date.
+- date: 2025-09-01
+  text: "Paper accepted to COLT 2025: **Optimistic Q-learning**. [arXiv](https://arxiv.org/abs/2407.13743)"
+- date: 2025-08-15
+  text: "Gave a talk on average-reward RL at IEOR seminar."
+# Add more like:
+# - date: YYYY-MM-DD
+#   text: "Your short update. [Optional link](https://...)"
