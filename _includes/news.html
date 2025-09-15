@@ -1,0 +1,15 @@
+<div class="news-pane">
+  <ul class="news-list">
+    {% assign items = site.data.news | sort: "date" | reverse %}
+    {% for item in items %}
+      <li class="news-item">
+        <time datetime="{{ item.date | date_to_xmlschema }}">
+          {{ item.date | date: "%b %d, %Y" }}
+        </time>
+        <div class="news-text">
+          {{ item.text | markdownify }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
