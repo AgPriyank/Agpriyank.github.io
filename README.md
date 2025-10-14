@@ -1,4 +1,4 @@
-# Academic Website (courtsey Claude)
+# Academic Website (courtesy Claude)
 
 A clean, maintainable academic website with separated data and presentation layers.
 
