@@ -26,7 +26,7 @@
         "icon": "📚",
         "text": "All Papers",
         "url": "https://scholar.google.com/citations?user=0VrLVDwAAAAJ&hl=en"
-      },
+      }
     ]
   },
   
@@ -41,24 +41,23 @@
     },
     {
       "date": "May 2025",
-      "text": "Average Q-learning <a href='https://https://arxiv.org/abs/2407.13743' target='_blank'>accepted</a> to COLT 2025!"
-    },
+      "text": "Average Q-learning <a href='https://arxiv.org/abs/2407.13743' target='_blank'>accepted</a> to COLT 2025!"
+    }
   ],
   
   "selectedPapers": [
-   {
+    {
       "title": "On the Convergence of Single-Timescale Actor-Critic",
       "authors": "Navdeep Kumar, Priyank Agrawal, Giorgia Ramponi, Kfir Yehuda Levy, Shie Mannor",
-      "status": "Poster at NeurIPS 2025",
+      "venue": "Poster at NeurIPS 2025",
       "url": "https://arxiv.org/abs/2410.08868"
-    }
+    },
     {
       "title": "Q-learning with Posterior Sampling",
       "authors": "Priyank Agrawal, Shipra Agrawal, Azmat Azati",
-      "status": "Short version at <a href='https://mlxor-workshop.github.io/' target='_blank'>MLxOR NeurIPS workshop</a>, full version under review",
+      "venue": "Short version at MLxOR NeurIPS workshop, full version under review",
       "url": "https://arxiv.org/abs/2506.00917"
     },
-
     {
       "title": "Optimistic Q-learning for average reward and episodic reinforcement learning",
       "authors": "Priyank Agrawal, Shipra Agrawal",
@@ -82,7 +81,9 @@
   "workingPapers": [
     {
       "title": "Algorithmic Learning for Sequence Models",
-      "authors": "Priyank Agrawal, Shipra Agrawal, Azmat Azati",
+      "authors": "",
+      "status": "In preparation",
+      "url": ""
     }
   ],
   
@@ -97,5 +98,3 @@
     }
   ]
 }
-
-
