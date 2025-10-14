@@ -4,7 +4,7 @@
     "title": "PhD Student",
     "department": "Industrial Engineering and Operations Research",
     "institution": "Columbia University",
-    "photo": "images/profile.jpg",
+    "photo": "profile.jpg",
     "email": "your.email@columbia.edu",
     "cv": "files/cv.pdf"
   },
@@ -114,4 +114,5 @@
       "url": "misc.html"
     }
   ]
+
 }
