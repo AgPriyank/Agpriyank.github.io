@@ -95,6 +95,8 @@ function renderAbout(about) {
 }
 
 function renderNews(newsItems) {
+    const newsContent = document.getElementById('news-content');
+    
     const newsHTML = newsItems.map(item => `
         <div class="news-item">
             <div class="news-date">${item.date}</div>
@@ -102,16 +104,7 @@ function renderNews(newsItems) {
         </div>
     `).join('');
     
-    // Render in both desktop and mobile containers
-    const newsContentDesktop = document.getElementById('news-content-desktop');
-    const newsContentMobile = document.getElementById('news-content');
-    
-    if (newsContentDesktop) {
-        newsContentDesktop.innerHTML = newsHTML;
-    }
-    if (newsContentMobile) {
-        newsContentMobile.innerHTML = newsHTML;
-    }
+    newsContent.innerHTML = newsHTML;
 }
 
 function renderPapers(papers) {
