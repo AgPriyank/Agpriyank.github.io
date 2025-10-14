@@ -1,0 +1,117 @@
+{
+  "personal": {
+    "name": "Priyank Agrawal",
+    "title": "PhD Student",
+    "department": "Industrial Engineering and Operations Research",
+    "institution": "Columbia University",
+    "photo": "images/profile.jpg",
+    "email": "your.email@columbia.edu",
+    "cv": "files/cv.pdf"
+  },
+  
+  "links": {
+    "googleScholar": "https://scholar.google.com/citations?user=0VrLVDwAAAAJ&hl=en",
+    "github": "https://github.com/agpriyank",
+    "twitter": "",
+    "linkedin": ""
+  },
+  
+  "about": {
+    "paragraphs": [
+      "Hi! Welcome to my website. I started as a PhD student in the Industrial Engineering and Operations Research department of Columbia University. I work with the fabulous <a href='http://www.columbia.edu/~sa3305/' target='_blank'>Shipra Agrawal</a>. I am excited by research questions under the broad umbrella of reinforcement learning and strategic behavior.",
+      "In 2021, I graduated from the University of Illinois Urbana-Champaign with a Master in Computer Science, where I was part of <a href='https://nanjiang.cs.illinois.edu/' target='_blank'>Nan Jiang's</a> RL theory group."
+    ],
+    "additionalLinks": [
+      {
+        "icon": "📚",
+        "text": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=0VrLVDwAAAAJ&hl=en"
+      },
+      {
+        "icon": "💻",
+        "text": "GitHub",
+        "url": "https://github.com/agpriyank"
+      }
+    ]
+  },
+  
+  "news": [
+    {
+      "date": "January 2025",
+      "text": "Paper 'Policy Gradient with Tree Search' accepted to ICLR Tiny Papers Track!"
+    },
+    {
+      "date": "October 2024",
+      "text": "New paper 'On the Convergence of Single-Timescale Actor-Critic' submitted for review!"
+    },
+    {
+      "date": "September 2024",
+      "text": "Paper accepted to COLT 2025! 'Optimistic Q-learning for average reward and episodic reinforcement learning'"
+    },
+    {
+      "date": "June 2024",
+      "text": "Submitted new paper 'Q-learning with Posterior Sampling'"
+    },
+    {
+      "date": "May 2022",
+      "text": "Paper on Learning-Augmented Mechanism Design accepted to ACM EC 2022"
+    }
+  ],
+  
+  "selectedPapers": [
+    {
+      "title": "Optimistic Q-learning for average reward and episodic reinforcement learning",
+      "authors": "Priyank Agrawal, Shipra Agrawal",
+      "venue": "Conference on Learning Theory (COLT) 2025",
+      "url": "https://arxiv.org/abs/2407.13743"
+    },
+    {
+      "title": "Policy Gradient with Tree Search (PGTS)",
+      "authors": "Navdeep Kumar, Priyank Agrawal, Kfir Yehuda Levy, Shie Mannor",
+      "venue": "ICLR Tiny Papers Track, 2025",
+      "url": ""
+    },
+    {
+      "title": "Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location",
+      "authors": "Priyank Agrawal, Eric Balkanski, Vasilis Gkatzelis, Tingting Ou, and Xizhi Tan",
+      "venue": "ACM EC 2022; extended version accepted to Mathematics of Operations Research",
+      "url": "https://arxiv.org/abs/2202.04080"
+    },
+    {
+      "title": "A Tractable Online Learning Algorithm for the Multinomial Logit Contextual Bandit",
+      "authors": "Priyank Agrawal, Theja Tulabandhula, Vashist Avadhanula",
+      "venue": "European Journal of Operational Research",
+      "url": "https://arxiv.org/pdf/2011.14033.pdf"
+    }
+  ],
+  
+  "workingPapers": [
+    {
+      "title": "Q-learning with Posterior Sampling",
+      "authors": "Priyank Agrawal, Shipra Agrawal, Azmat Azati",
+      "status": "Under review",
+      "url": "https://arxiv.org/abs/2506.00917"
+    },
+    {
+      "title": "On the Convergence of Single-Timescale Actor-Critic",
+      "authors": "Navdeep Kumar, Priyank Agrawal, Giorgia Ramponi, Kfir Yehuda Levy, Shie Mannor",
+      "status": "Under review",
+      "url": "https://arxiv.org/abs/2410.08868"
+    }
+  ],
+  
+  "navigation": [
+    {
+      "text": "Home",
+      "url": "index.html"
+    },
+    {
+      "text": "All Publications",
+      "url": "publications.html"
+    },
+    {
+      "text": "Misc",
+      "url": "misc.html"
+    }
+  ]
+}
