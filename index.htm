@@ -8,31 +8,31 @@
 </head>
 <body>
     <div class="container">
-        <header id="header">
-            <!-- Profile section will be loaded here -->
-        </header>
-
         <nav id="navigation">
             <!-- Navigation will be loaded here -->
         </nav>
 
         <div class="main-layout">
-            <div class="content">
+            <aside class="sidebar">
+                <div class="profile-section" id="profile">
+                    <!-- Profile will be loaded here -->
+                </div>
+
+                <section id="news">
+                    <h3>News</h3>
+                    <div class="news-container" id="news-content">
+                        <!-- News items will be loaded here -->
+                    </div>
+                </section>
+            </aside>
+
+            <main class="content">
                 <section id="about">
                     <h2>About Me</h2>
                     <div id="about-content">
                         <!-- About content will be loaded here -->
                     </div>
                 </section>
-
-                <aside class="sidebar mobile-news">
-                    <section id="news">
-                        <h3>News</h3>
-                        <div class="news-container" id="news-content">
-                            <!-- News items will be loaded here -->
-                        </div>
-                    </section>
-                </aside>
 
                 <section id="selected-papers">
                     <h2>Selected Papers</h2>
@@ -48,16 +48,7 @@
                         <!-- Working papers will be loaded here -->
                     </div>
                 </section>
-            </div>
-
-            <aside class="sidebar desktop-news">
-                <section id="news-desktop">
-                    <h3>News</h3>
-                    <div class="news-container" id="news-content-desktop">
-                        <!-- News items will be loaded here -->
-                    </div>
-                </section>
-            </aside>
+            </main>
         </div>
 
         <footer>
