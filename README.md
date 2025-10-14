@@ -1,4 +1,4 @@
-# Academic Website (courtesy Claude)
+# Academic Website (courtsey Claude)
 
 A clean, maintainable academic website with separated data and presentation layers.
 
@@ -20,17 +20,18 @@ agpriyank.github.io/
 
 ## 🎨 Layout Features
 
-- **Clean, minimal design** - inspired by modern academic sites
-- **Two-column layout** on desktop (main content + news sidebar)
+- **Compact, space-efficient design** - content starts at the top
+- **Two-column layout** throughout - no wasted vertical space
+- **Profile in LEFT sidebar** - photo, name, contact info on the left (narrower column)
+- **Content on the RIGHT** - About Me, Papers on the right (wider column)
 - **No shaded boxes** - papers displayed as simple text entries
 - **Icon-based contact buttons** - with emoji symbols (✉ 🎓 💻 📄)
-- **Sleek navigation** - minimal bordered buttons
-- **News sidebar** - sticky positioning with scroll on desktop (600px height)
+- **Sleek navigation** - minimal bordered buttons at top
+- **News in sidebar** - below profile, with scroll (400px height)
 - **"View All Publications" button** - links to full publications page
 - **Mobile optimized**: 
-  - News appears after "About Me" section with scrolling enabled
-  - Only first 6 news items shown on mobile
-  - All news items visible with scroll on desktop
+  - Sidebar moves to top on mobile (profile + news)
+  - Single column layout on narrow screens
 - **Selected Papers** - curated highlights (no boxes)
 - **Working Papers** - under review papers (no boxes)
 - **Responsive design** - layout adapts at 900px breakpoint
@@ -123,49 +124,20 @@ Icons are defined in `js/app.js` in the `renderHeader()` function. Current icons
 You can change these emoji symbols to any other unicode characters you prefer.
 
 ### Adjust section heights:
-- News sidebar height on desktop: Change `.sidebar.desktop-news .news-container { max-height: 600px; }` (increase or decrease as needed)
-- News height on mobile: Change `.sidebar.mobile-news .news-container { max-height: 400px; }`
-- Number of news items on mobile: Change `.sidebar.mobile-news .news-item:nth-child(n+7)` (7 means show first 6 items, 8 means show first 7, etc.)
+- News sidebar height: Change `.news-container { max-height: 400px; }` (increase or decrease as needed)
+- Profile photo size: Change `.profile-photo { width: 180px; height: 180px; }`
 
-### News section behavior:
+### Layout structure:
 **Desktop (>900px):**
-- News appears in right sidebar (sticky positioning)
-- Fixed height (600px by default) with scroll
-- Aligns roughly with Selected Papers section height
-- All news items accessible via scroll
+- Left sidebar (narrower - 280px): Profile (photo, name, contact) + News
+- Right column (wider): About Me, Selected Papers, Working Papers
+- Sidebar is sticky (stays visible while scrolling)
+- All news items visible with scroll in sidebar
 
 **Mobile (≤900px):**
-- News appears after "About Me" section
-- Shows only first 6 news items
-- Limited to 400px height with scroll
+- Profile section appears at top
+- News section below profile
+- Main content below
+- Single column layout
 
-To change mobile news position, move the `<aside class="sidebar mobile-news">` block in `index.html` to before or after different sections.
-
-### Add new sections:
-1. Add data to `content.json`
-2. Add HTML structure to `index.html`
-3. Add rendering function to `app.js`
-
-## 🔧 Troubleshooting
-
-**Site not loading?**
-- Check browser console for errors (F12)
-- Make sure all file paths are correct
-- Verify `content.json` is valid JSON (use jsonlint.com)
-
-**Content not showing?**
-- Verify the file is at `data/content.json`
-- Check that all required fields in JSON are filled
-
-**Sidebar not showing?**
-- Check screen width (sidebar hides on screens < 900px)
-- On mobile, it appears at the top
-
-## 📝 Creating Additional Pages
-
-To create `publications.html` or `misc.html`:
-1. Copy `index.html` structure
-2. Create new data sections in `content.json`
-3. Update `app.js` to handle the new page
-
-Need help? Check the code comments or reach out!
+The profile and news are always together in the sidebar on the left, which moves to the top on mobile.
