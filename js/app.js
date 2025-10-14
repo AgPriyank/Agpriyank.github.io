@@ -12,7 +12,7 @@ async function loadData() {
 
 function renderPage(data) {
     // Render Header
-    renderHeader(data.personal, data.links);
+    renderProfile(data.personal, data.links);
     
     // Render Navigation
     renderNavigation(data.navigation);
@@ -33,8 +33,8 @@ function renderPage(data) {
     renderFooter(data.personal.name);
 }
 
-function renderHeader(personal, links) {
-    const header = document.getElementById('header');
+function renderProfile(personal, links) {
+    const profile = document.getElementById('profile');
     
     const contactButtons = [];
     
@@ -57,10 +57,10 @@ function renderHeader(personal, links) {
         contactButtons.push(`<a href="${personal.cv}" class="contact-btn" target="_blank">📄 CV</a>`);
     }
     
-    header.innerHTML = `
+    profile.innerHTML = `
         <img src="${personal.photo}" alt="${personal.name}" class="profile-photo">
         <h1>${personal.name}</h1>
-        <p class="subtitle">${personal.title}, ${personal.department}<br>${personal.institution}</p>
+        <p class="subtitle">${personal.title}<br>${personal.department}<br>${personal.institution}</p>
         <div class="contact-buttons">
             ${contactButtons.join('')}
         </div>
@@ -158,3 +158,4 @@ function renderFooter(name) {
 
 // Load data when page loads
 document.addEventListener('DOMContentLoaded', loadData);
+
