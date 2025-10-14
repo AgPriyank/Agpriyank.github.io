@@ -1,31 +1,171 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# Academic Website (courtesy Claude)
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+A clean, maintainable academic website with separated data and presentation layers.
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+## 📁 File Structure
 
-# Instructions
+```
+agpriyank.github.io/
+├── index.html              # Main HTML template (don't edit often)
+├── css/
+│   └── style.css           # All styling (edit for design changes)
+├── js/
+│   └── app.js              # Renders data (don't edit often)
+├── data/
+│   └── content.json        # YOUR DATA - EDIT THIS! ⭐
+├── images/
+│   └── profile.jpg         # Your photo
+└── README.md               # This file
+```
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## 🎨 Layout Features
 
-See more info at https://academicpages.github.io/
+- **Clean, minimal design** - inspired by modern academic sites
+- **Two-column layout** on desktop (main content + news sidebar)
+- **No shaded boxes** - papers displayed as simple text entries
+- **Icon-based contact buttons** - with emoji symbols (✉ 🎓 💻 📄)
+- **Sleek navigation** - minimal bordered buttons
+- **News sidebar** - sticky positioning with scroll on desktop (600px height)
+- **"View All Publications" button** - links to full publications page
+- **Mobile optimized**: 
+  - News appears after "About Me" section with scrolling enabled
+  - Only first 6 news items shown on mobile
+  - All news items visible with scroll on desktop
+- **Selected Papers** - curated highlights (no boxes)
+- **Working Papers** - under review papers (no boxes)
+- **Responsive design** - layout adapts at 900px breakpoint
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+## 🚀 Quick Setup
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+### Step 1: Create the folders
+```bash
+mkdir -p css js data images
+```
 
-# Changelog -- bugfixes and enhancements
+### Step 2: Add the files
+1. Copy `index.html` to the root
+2. Copy `style.css` to `css/` folder
+3. Copy `app.js` to `js/` folder
+4. Copy `content.json` to `data/` folder
+5. Add your profile photo to `images/` folder as `profile.jpg`
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+### Step 3: Commit and push
+```bash
+git add .
+git commit -m "New website with separated data"
+git push origin main
+```
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+Your site will be live at `https://agpriyank.github.io/` in a few minutes!
+
+## ✏️ How to Edit Your Content
+
+### To update your information:
+**Just edit `data/content.json`!** This is the ONLY file you need to edit for content changes.
+
+#### Adding a news item:
+```json
+{
+  "date": "November 2024",
+  "text": "Your news here"
+}
+```
+
+#### Adding a selected paper (published/accepted):
+```json
+{
+  "title": "Your Paper Title",
+  "authors": "Author1, Author2",
+  "venue": "Conference Name 2024",
+  "url": "https://arxiv.org/..."
+}
+```
+
+#### Adding a working paper (under review):
+```json
+{
+  "title": "Your Paper Title",
+  "authors": "Author1, Author2",
+  "status": "Under review",
+  "url": "https://arxiv.org/..."
+}
+```
+
+#### Updating your bio:
+Edit the `paragraphs` array in the `about` section. You can use HTML tags like `<a>` for links.
+
+#### Changing the publications button link:
+The "View All Publications" button in `index.html` links to `publications.html`. Update this URL as needed.
+
+### To change the design:
+Edit `css/style.css` - change colors, fonts, spacing, etc.
+
+## 🎨 Customization Tips
+
+### Change color scheme:
+In `style.css`, replace these colors:
+- `#2c3e50` - Primary dark color (buttons, links)
+- `#fafafa` - Light background for news
+- `#e5e5e5` - Border colors
+
+### Paper styling:
+Papers are displayed as simple text without boxes. To add back boxes/backgrounds, edit the `.paper` class in `style.css`.
+
+### Contact button icons:
+Icons are defined in `js/app.js` in the `renderHeader()` function. Current icons:
+- ✉ Email
+- 🎓 Scholar (Google Scholar)
+- 💻 GitHub
+- 🐦 Twitter
+- 💼 LinkedIn
+- 📄 CV
+
+You can change these emoji symbols to any other unicode characters you prefer.
+
+### Adjust section heights:
+- News sidebar height on desktop: Change `.sidebar.desktop-news .news-container { max-height: 600px; }` (increase or decrease as needed)
+- News height on mobile: Change `.sidebar.mobile-news .news-container { max-height: 400px; }`
+- Number of news items on mobile: Change `.sidebar.mobile-news .news-item:nth-child(n+7)` (7 means show first 6 items, 8 means show first 7, etc.)
+
+### News section behavior:
+**Desktop (>900px):**
+- News appears in right sidebar (sticky positioning)
+- Fixed height (600px by default) with scroll
+- Aligns roughly with Selected Papers section height
+- All news items accessible via scroll
+
+**Mobile (≤900px):**
+- News appears after "About Me" section
+- Shows only first 6 news items
+- Limited to 400px height with scroll
+
+To change mobile news position, move the `<aside class="sidebar mobile-news">` block in `index.html` to before or after different sections.
+
+### Add new sections:
+1. Add data to `content.json`
+2. Add HTML structure to `index.html`
+3. Add rendering function to `app.js`
+
+## 🔧 Troubleshooting
+
+**Site not loading?**
+- Check browser console for errors (F12)
+- Make sure all file paths are correct
+- Verify `content.json` is valid JSON (use jsonlint.com)
+
+**Content not showing?**
+- Verify the file is at `data/content.json`
+- Check that all required fields in JSON are filled
+
+**Sidebar not showing?**
+- Check screen width (sidebar hides on screens < 900px)
+- On mobile, it appears at the top
+
+## 📝 Creating Additional Pages
+
+To create `publications.html` or `misc.html`:
+1. Copy `index.html` structure
+2. Create new data sections in `content.json`
+3. Update `app.js` to handle the new page
+
+Need help? Check the code comments or reach out!
