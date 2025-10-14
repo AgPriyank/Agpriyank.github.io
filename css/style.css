@@ -14,70 +14,14 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 20px;
-}
-
-/* Header Styles */
-header {
-    text-align: center;
-    padding: 30px 0;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 30px;
-}
-
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 2px solid #eee;
-}
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 8px;
-    color: #222;
-    font-weight: 600;
-}
-
-.subtitle {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-.contact-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
-.contact-btn {
-    padding: 6px 12px;
-    background-color: transparent;
-    color: #555;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: all 0.3s;
-    font-size: 0.85em;
-    border: 1px solid #ddd;
-}
-
-.contact-btn:hover {
-    background-color: #f5f5f5;
-    border-color: #999;
+    padding: 20px 20px;
 }
 
 /* Navigation Styles */
 nav {
     display: flex;
     gap: 8px;
-    justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     flex-wrap: wrap;
 }
 
@@ -98,10 +42,10 @@ nav a:hover {
     border-color: #999;
 }
 
-/* Main Layout - Two Column */
+/* Main Layout - Two Column from the start */
 .main-layout {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 280px 1fr;
     gap: 50px;
     align-items: start;
 }
@@ -110,25 +54,64 @@ nav a:hover {
     min-width: 0;
 }
 
-/* Desktop sidebar */
-.sidebar.desktop-news {
+/* Sidebar - Profile + News */
+.sidebar {
     position: sticky;
     top: 20px;
     align-self: start;
 }
 
-.sidebar.desktop-news section {
-    margin-bottom: 0;
+/* Profile Section in Sidebar */
+.profile-section {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.sidebar.desktop-news .news-container {
-    max-height: 600px;
-    overflow-y: auto;
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #eee;
 }
 
-/* Mobile news - hidden on desktop */
-.sidebar.mobile-news {
-    display: none;
+.profile-section h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #222;
+    font-weight: 600;
+}
+
+.profile-section .subtitle {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.contact-btn {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #555;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.3s;
+    font-size: 0.8em;
+    border: 1px solid #ddd;
+}
+
+.contact-btn:hover {
+    background-color: #f5f5f5;
+    border-color: #999;
 }
 
 /* Section Styles */
@@ -141,17 +124,13 @@ h2 {
     margin-bottom: 15px;
     color: #222;
     font-weight: 600;
-    border-bottom: none;
-    padding-bottom: 0;
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 12px;
     color: #222;
     font-weight: 600;
-    border-bottom: none;
-    padding-bottom: 0;
 }
 
 /* About Section */
@@ -193,13 +172,14 @@ h3 {
     text-decoration: underline;
 }
 
-/* News Section - Sidebar */
+/* News Section in Sidebar */
 .news-container {
-    padding: 15px;
+    padding: 12px;
     background-color: #fafafa;
     border-radius: 4px;
     border: 1px solid #e5e5e5;
-    overflow-y: auto; /* Ensure scroll works on all screen sizes */
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 .news-item {
@@ -218,21 +198,18 @@ h3 {
     color: #666;
     font-weight: 600;
     margin-bottom: 4px;
-    font-size: 0.85em;
+    font-size: 0.8em;
 }
 
 .news-text {
     color: #444;
     line-height: 1.6;
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
 
 /* Papers Section - Clean, no boxes */
 .paper {
     margin-bottom: 20px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
 }
 
 .paper-title {
@@ -265,7 +242,6 @@ h3 {
     font-size: 0.9em;
 }
 
-/* Working Papers Section */
 .paper-status {
     color: #888;
     font-style: italic;
@@ -305,41 +281,33 @@ footer {
         grid-template-columns: 1fr;
     }
     
-    /* Hide desktop sidebar */
-    .sidebar.desktop-news {
-        display: none;
-    }
-    
-    /* Show mobile news after About section */
-    .sidebar.mobile-news {
-        display: block;
+    .sidebar {
         position: static;
-        height: auto;
-        margin-bottom: 40px;
+        order: -1; /* Move sidebar to top on mobile */
+        margin-bottom: 30px;
     }
     
-    .sidebar.mobile-news section {
-        margin-bottom: 0;
+    .profile-section {
+        margin-bottom: 25px;
     }
     
-    .sidebar.mobile-news .news-container {
-        max-height: 350px;
-        overflow-y: auto; /* Ensure scroll is enabled */
+    .profile-photo {
+        width: 150px;
+        height: 150px;
     }
     
-    /* Hide news items beyond the 6th on mobile */
-    .sidebar.mobile-news .news-item:nth-child(n+7) {
-        display: none;
+    .news-container {
+        max-height: 300px;
     }
 }
 
 @media (max-width: 600px) {
     .container {
-        padding: 20px 15px;
+        padding: 15px 15px;
     }
 
     h1 {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     
     .profile-photo {
@@ -347,16 +315,11 @@ footer {
         height: 120px;
     }
     
-    .contact-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
     h2 {
         font-size: 1.3em;
     }
     
     h3 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
