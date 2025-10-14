@@ -24,52 +24,46 @@
     "additionalLinks": [
       {
         "icon": "📚",
-        "text": "Google Scholar",
+        "text": "All Papers",
         "url": "https://scholar.google.com/citations?user=0VrLVDwAAAAJ&hl=en"
       },
-      {
-        "icon": "💻",
-        "text": "GitHub",
-        "url": "https://github.com/agpriyank"
-      }
     ]
   },
   
   "news": [
     {
-      "date": "January 2025",
-      "text": "Paper 'Policy Gradient with Tree Search' accepted to ICLR Tiny Papers Track!"
+      "date": "Oct 2025",
+      "text": "Presenting <a href='https://arxiv.org/abs/2506.00917' target='_blank'>Posterior Sampling for Q-learning</a> at Informs 2025!"
     },
     {
-      "date": "October 2024",
-      "text": "New paper 'On the Convergence of Single-Timescale Actor-Critic' submitted for review!"
+      "date": "Sept 2025",
+      "text": "Single timscale Actor-Critic <a href='https://arxiv.org/abs/2410.08868' target='_blank'>accepted</a> to NeurIPS 2025!"
     },
     {
-      "date": "September 2024",
-      "text": "Paper accepted to COLT 2025! 'Optimistic Q-learning for average reward and episodic reinforcement learning'"
+      "date": "May 2025",
+      "text": "Average Q-learning <a href='https://https://arxiv.org/abs/2407.13743' target='_blank'>accepted</a> to COLT 2025!"
     },
-    {
-      "date": "June 2024",
-      "text": "Submitted new paper 'Q-learning with Posterior Sampling'"
-    },
-    {
-      "date": "May 2022",
-      "text": "Paper on Learning-Augmented Mechanism Design accepted to ACM EC 2022"
-    }
   ],
   
   "selectedPapers": [
+   {
+      "title": "On the Convergence of Single-Timescale Actor-Critic",
+      "authors": "Navdeep Kumar, Priyank Agrawal, Giorgia Ramponi, Kfir Yehuda Levy, Shie Mannor",
+      "status": "Poster at NeurIPS 2025",
+      "url": "https://arxiv.org/abs/2410.08868"
+    }
+    {
+      "title": "Q-learning with Posterior Sampling",
+      "authors": "Priyank Agrawal, Shipra Agrawal, Azmat Azati",
+      "status": "Short version at <a href='https://mlxor-workshop.github.io/' target='_blank'>MLxOR NeurIPS workshop</a>, full version under review",
+      "url": "https://arxiv.org/abs/2506.00917"
+    },
+
     {
       "title": "Optimistic Q-learning for average reward and episodic reinforcement learning",
       "authors": "Priyank Agrawal, Shipra Agrawal",
       "venue": "Conference on Learning Theory (COLT) 2025",
       "url": "https://arxiv.org/abs/2407.13743"
-    },
-    {
-      "title": "Policy Gradient with Tree Search (PGTS)",
-      "authors": "Navdeep Kumar, Priyank Agrawal, Kfir Yehuda Levy, Shie Mannor",
-      "venue": "ICLR Tiny Papers Track, 2025",
-      "url": ""
     },
     {
       "title": "Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location",
@@ -87,27 +81,15 @@
   
   "workingPapers": [
     {
-      "title": "Q-learning with Posterior Sampling",
+      "title": "Algorithmic Learning for Sequence Models",
       "authors": "Priyank Agrawal, Shipra Agrawal, Azmat Azati",
-      "status": "Under review",
-      "url": "https://arxiv.org/abs/2506.00917"
-    },
-    {
-      "title": "On the Convergence of Single-Timescale Actor-Critic",
-      "authors": "Navdeep Kumar, Priyank Agrawal, Giorgia Ramponi, Kfir Yehuda Levy, Shie Mannor",
-      "status": "Under review",
-      "url": "https://arxiv.org/abs/2410.08868"
     }
   ],
   
   "navigation": [
     {
-      "text": "Home",
-      "url": "index.html"
-    },
-    {
       "text": "All Publications",
-      "url": "publications.html"
+      "url": "https://scholar.google.com/citations?user=0VrLVDwAAAAJ&hl=en"
     },
     {
       "text": "Misc",
@@ -115,4 +97,5 @@
     }
   ]
 }
+
 
