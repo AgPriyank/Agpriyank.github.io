@@ -18,7 +18,8 @@
   
   "about": {
     "paragraphs": [
-      "Hi! Welcome to my website. I am a PhD student at Columbia University, where I work with the fabulous <a href='http://www.columbia.edu/~sa3305/' target='_blank'>Shipra Agrawal</a>. I am excited by research questions under the broad umbrella of reinforcement learning and algorithm design.",
+      "Hi! Welcome to my website. I am a PhD student at Columbia University, where I work with the fabulous <a href='http://www.columbia.edu/~sa3305/' target='_blank'>Shipra Agrawal</a>. I am excited by research questions under the broad umbrella of reinforcement learning and algorithm design. Most recent research includes proving performance guarantees for highly scalable RL algorithms like Q-learning and soft actor-critic. My current focus is on inference time behavior and (post-) training algorithms for LLMs",
+      "I also actively collaborate with <a href='https://hsnamkoong.github.io/' target='_blank'> Hong</a> at the Columbia Business School. My research endeavors are supported by in part by a <a href='https://giving.columbia.edu/tang-family-gives-20-million-establish-tang-fund-engineering-innovations-financial-technology' target='_blank'> Tang Family Fellowship</a> and a <b>Cheung-Kong Innovation Doctoral Fellowship</b>".,
       "In 2021, I graduated from the University of Illinois Urbana-Champaign with a Master in Computer Science, where I was part of <a href='https://nanjiang.cs.illinois.edu/' target='_blank'>Nan Jiang's</a> RL theory group. In the past, I was a strategist at Goldman Sachs."
     ]
   },
@@ -91,4 +92,5 @@
     }
   ]
 }
+
 
