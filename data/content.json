@@ -12,21 +12,14 @@
   "links": {
     "googleScholar": "https://scholar.google.com/citations?user=0VrLVDwAAAAJ&hl=en",
     "github": "https://github.com/agpriyank",
-    "twitter": "",
-    "linkedin": ""
+    "twitter": "https://x.com/AgPriyank",
+    "linkedin": "https://www.linkedin.com/in/priyank-agrawal-662b4b4b/"
   },
   
   "about": {
     "paragraphs": [
-      "Hi! Welcome to my website. I started as a PhD student in the Industrial Engineering and Operations Research department of Columbia University. I work with the fabulous <a href='http://www.columbia.edu/~sa3305/' target='_blank'>Shipra Agrawal</a>. I am excited by research questions under the broad umbrella of reinforcement learning and strategic behavior.",
-      "In 2021, I graduated from the University of Illinois Urbana-Champaign with a Master in Computer Science, where I was part of <a href='https://nanjiang.cs.illinois.edu/' target='_blank'>Nan Jiang's</a> RL theory group."
-    ],
-    "additionalLinks": [
-      {
-        "icon": "📚",
-        "text": "All Papers",
-        "url": "https://scholar.google.com/citations?user=0VrLVDwAAAAJ&hl=en"
-      }
+      "Hi! Welcome to my website. I am a PhD student at Columbia University, where I work with the fabulous <a href='http://www.columbia.edu/~sa3305/' target='_blank'>Shipra Agrawal</a>. I am excited by research questions under the broad umbrella of reinforcement learning and algorithm design.",
+      "In 2021, I graduated from the University of Illinois Urbana-Champaign with a Master in Computer Science, where I was part of <a href='https://nanjiang.cs.illinois.edu/' target='_blank'>Nan Jiang's</a> RL theory group. In the past, I was a strategist at Goldman Sachs."
     ]
   },
   
@@ -98,3 +91,4 @@
     }
   ]
 }
+
