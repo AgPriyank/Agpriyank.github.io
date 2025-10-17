@@ -80,9 +80,7 @@ function renderAbout(about) {
     
     const paragraphs = about.paragraphs.map(p => `<p>${p}</p>`).join('');
     
-    const links = about.additionalLinks.map(link => 
-        `<a href="${link.url}" target="_blank">${link.icon} ${link.text}</a>`
-    ).join('');
+    const links = ''
     
     aboutContent.innerHTML = `
         <div class="about-content">
@@ -158,4 +156,5 @@ function renderFooter(name) {
 
 // Load data when page loads
 document.addEventListener('DOMContentLoaded', loadData);
+
 
