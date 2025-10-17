@@ -74,7 +74,13 @@
   
   "workingPapers": [
     {
-      "title": "Algorithmic Learning for Sequence Models",
+      "title": "Algorithmic earning for sequence models",
+      "authors": "",
+      "status": "In preparation",
+      "url": ""
+    },
+    {
+      "title": "Theory of tree search enhanced reinforcement learning",
       "authors": "",
       "status": "In preparation",
       "url": ""
@@ -92,5 +98,6 @@
     }
   ]
 }
+
 
 
