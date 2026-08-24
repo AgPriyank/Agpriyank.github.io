@@ -1,45 +1,66 @@
 {
   "personal": {
     "name": "Priyank Agrawal",
-    "title": "PhD Student",
+    "title": "PhD Candidate",
     "department": "Industrial Engineering and Operations Research",
     "institution": "Columbia University",
+    "tagline": "RL theory · LLM post-training · Agentic AI",
     "photo": "IMG_20210703_190713.jpg",
     "email": "pa2608@columbia.edu",
-    "cv": "https://www.dropbox.com/scl/fi/97sptyacy6myszhz6bmqz/Resume_short.pdf?rlkey=dgp1j5viojvdvksc0jqpw8dk0&st=euh12lje&dl=0"
+    "cv": "Priyank_Agrawal_Resume.pdf",
+    "lastUpdated": "August 2026"
   },
-  
+
   "links": {
     "googleScholar": "https://scholar.google.com/citations?user=0VrLVDwAAAAJ&hl=en",
     "github": "https://github.com/agpriyank",
     "twitter": "https://x.com/AgPriyank",
     "linkedin": "https://www.linkedin.com/in/priyank-agrawal-662b4b4b/"
   },
-  
+
   "about": {
     "paragraphs": [
-      "Hi! Welcome to my website. I am a PhD student at Columbia University, where I work with the fabulous <a href='http://www.columbia.edu/~sa3305/' target='_blank'>Shipra Agrawal</a>. I am excited by research questions under the broad umbrella of reinforcement learning and algorithm design. Most recent research includes proving performance guarantees for highly scalable RL algorithms like Q-learning and soft actor-critic.",
-      "I am a student researcher at Meta, where my current focus is on efficient inference time behavior and (post-) training algorithms for LLMs. I also actively collaborate with <a href='https://hsnamkoong.github.io/' target='_blank'> Hong</a> at the Columbia Business School. My research endeavors are supported by in part by a <a href='https://giving.columbia.edu/tang-family-gives-20-million-establish-tang-fund-engineering-innovations-financial-technology' target='_blank'> Tang Family Fellowship</a> and a <b>Cheung-Kong Innovation Doctoral Fellowship</b>",
-      "In 2021, I graduated from the University of Illinois Urbana-Champaign with a Master in Computer Science, where I was part of <a href='https://nanjiang.cs.illinois.edu/' target='_blank'>Nan Jiang's</a> RL theory group. In the past, I was a strategist at Goldman Sachs."
+      "Hi! Welcome to my website. I am a final-year PhD candidate at Columbia University, where I work with the fabulous <a href='http://www.columbia.edu/~sa3305/' target='_blank'>Shipra Agrawal</a> (graduating September 2026). I love discovering connections between reinforcement learning and modern AI systems, and thinking about how to improve decision-making in the wild.",
+      "Most recently, I was a student researcher at Meta (Nov 2025 – Apr 2026), designing RLVR post-training algorithms for reasoning LLMs — including <a href='https://arxiv.org/abs/2607.19313' target='_blank'>Off-Context GRPO</a>, which leverages privileged information to learn on hard problems. On the theory side, I prove guarantees for RL algorithms — planning and exploration, regret and sample-complexity analysis for Q-learning with posterior sampling and optimism, and actor-critic convergence. To me these are one agenda: exploration, credit assignment, and decision-making under uncertainty are exactly the algorithm-design questions that agentic AI systems run on. My current interests span LLM post-training (RLVR, RLHF, reward modeling), agent harness design, and inference-time optimization.",
+      "My research is supported in part by a <a href='https://giving.columbia.edu/tang-family-gives-20-million-establish-tang-fund-engineering-innovations-financial-technology' target='_blank'>Tang Family Fellowship</a> and a <b>Cheung-Kong Innovation Doctoral Fellowship</b>. Before Columbia, I earned a Master's in Computer Science from the University of Illinois Urbana-Champaign in <a href='https://nanjiang.cs.illinois.edu/' target='_blank'>Nan Jiang</a>'s RL theory group, and in the past I was a strategist at Goldman Sachs.",
+      "<a href='mailto:pa2608@columbia.edu'>Reach out</a> if you find all of the above interesting too!"
     ]
   },
-  
+
   "news": [
     {
+      "date": "July 2026",
+      "text": "New preprint: <a href='https://arxiv.org/abs/2607.19313' target='_blank'>Off-Context GRPO</a> — learning to reason on hard problems using privileged information, from my work at Meta!"
+    },
+    {
+      "date": "April 2026",
+      "text": "Wrapped up my student researcher internship at Meta — designed RLVR post-training algorithms for reasoning LLMs."
+    },
+    {
+      "date": "Jan 2026",
+      "text": "<a href='https://arxiv.org/abs/2506.00917' target='_blank'>Q-learning with Posterior Sampling</a> accepted to ICLR 2026!"
+    },
+    {
       "date": "Oct 2025",
-      "text": "Presenting <a href='https://arxiv.org/abs/2506.00917' target='_blank'>Posterior Sampling for Q-learning</a> at Informs 2025!"
+      "text": "Presenting <a href='https://arxiv.org/abs/2506.00917' target='_blank'>Posterior Sampling for Q-learning</a> at INFORMS 2025!"
     },
     {
       "date": "Sept 2025",
-      "text": "Single timscale Actor-Critic <a href='https://arxiv.org/abs/2410.08868' target='_blank'>accepted</a> to NeurIPS 2025!"
+      "text": "Single-timescale Actor-Critic <a href='https://arxiv.org/abs/2410.08868' target='_blank'>accepted</a> to NeurIPS 2025!"
     },
     {
       "date": "May 2025",
       "text": "Average Q-learning <a href='https://arxiv.org/abs/2407.13743' target='_blank'>accepted</a> to COLT 2025!"
     }
   ],
-  
+
   "selectedPapers": [
+    {
+      "title": "Q-learning with Posterior Sampling",
+      "authors": "Priyank Agrawal, Shipra Agrawal, Azmat Azati",
+      "venue": "ICLR 2026",
+      "url": "https://arxiv.org/abs/2506.00917"
+    },
     {
       "title": "On the Convergence of Single-Timescale Actor-Critic",
       "authors": "Navdeep Kumar, Priyank Agrawal, Giorgia Ramponi, Kfir Yehuda Levy, Shie Mannor",
@@ -47,16 +68,16 @@
       "url": "https://arxiv.org/abs/2410.08868"
     },
     {
-      "title": "Q-learning with Posterior Sampling",
-      "authors": "Priyank Agrawal, Shipra Agrawal, Azmat Azati",
-      "venue": "Short version at MLxOR NeurIPS workshop, full version under review",
-      "url": "https://arxiv.org/abs/2506.00917"
-    },
-    {
       "title": "Optimistic Q-learning for average reward and episodic reinforcement learning",
       "authors": "Priyank Agrawal, Shipra Agrawal",
-      "venue": "Conference on Learning Theory (COLT) 2025",
+      "venue": "Conference on Learning Theory (COLT) 2025; journal version underway",
       "url": "https://arxiv.org/abs/2407.13743"
+    },
+    {
+      "title": "Policy Gradient with Tree Search (PGTS) in Reinforcement Learning Evades Local Maxima",
+      "authors": "Navdeep Kumar, Priyank Agrawal, Kfir Yehuda Levy, Shie Mannor",
+      "venue": "ICLR 2024, Tiny Papers track",
+      "url": "https://openreview.net/forum?id=61g5xxWOI6"
     },
     {
       "title": "Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location",
@@ -71,37 +92,26 @@
       "url": "https://arxiv.org/pdf/2011.14033.pdf"
     }
   ],
-  
+
   "workingPapers": [
     {
-      "title": "Algorithmic earning for sequence models",
-      "authors": "",
-      "status": "In preparation",
-      "url": ""
+      "title": "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information",
+      "authors": "Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou, Jalaj Bhandari, Kavosh Asadi, Daniel Jiang, Aditya Modi",
+      "status": "arXiv preprint, July 2026",
+      "url": "https://arxiv.org/abs/2607.19313"
     },
     {
-      "title": "Theory of tree search enhanced reinforcement learning",
+      "title": "Post-training algorithms for long-horizon tasks",
       "authors": "",
-      "status": "In preparation",
+      "status": "In preparation — accelerating credit assignment under sparse rewards and limited environment access",
       "url": ""
     }
   ],
-  
+
   "navigation": [
     {
       "text": "All Publications",
       "url": "https://scholar.google.com/citations?user=0VrLVDwAAAAJ&hl=en"
-    },
-    {
-      "text": "Misc",
-      "url": "misc.html"
     }
   ]
 }
-
-
-
-
-
-
-

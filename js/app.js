@@ -30,7 +30,7 @@ function renderPage(data) {
     renderNews(data.news);
     
     // Render Footer
-    renderFooter(data.personal.name);
+    renderFooter(data.personal);
 }
 
 function renderProfile(personal, links) {
@@ -61,6 +61,7 @@ function renderProfile(personal, links) {
         <img src="${personal.photo}" alt="${personal.name}" class="profile-photo">
         <h1>${personal.name}</h1>
         <p class="subtitle">${personal.title}<br>${personal.department}<br>${personal.institution}</p>
+        ${personal.tagline ? `<p class="tagline">${personal.tagline}</p>` : ''}
         <div class="contact-buttons">
             ${contactButtons.join('')}
         </div>
@@ -145,13 +146,13 @@ function renderWorkingPapers(papers) {
     papersContent.innerHTML = papersHTML;
 }
 
-function renderFooter(name) {
+function renderFooter(personal) {
     const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().toLocaleString('default', { month: 'long', year: 'numeric' });
-    
+    const lastUpdated = personal.lastUpdated || new Date().toLocaleString('default', { month: 'long', year: 'numeric' });
+
     document.getElementById('current-year').textContent = currentYear;
-    document.getElementById('footer-name').textContent = name;
-    document.getElementById('last-updated').textContent = currentMonth;
+    document.getElementById('footer-name').textContent = personal.name;
+    document.getElementById('last-updated').textContent = lastUpdated;
 }
 
 // Load data when page loads

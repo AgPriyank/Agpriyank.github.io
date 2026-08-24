@@ -90,6 +90,13 @@ nav a:hover {
     line-height: 1.5;
 }
 
+.profile-section .tagline {
+    font-size: 0.82em;
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
 .contact-buttons {
     display: flex;
     gap: 8px;
