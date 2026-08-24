@@ -41,16 +41,32 @@
       "text": "<a href='https://arxiv.org/abs/2506.00917' target='_blank'>Q-learning with Posterior Sampling</a> accepted to ICLR 2026!"
     },
     {
+      "date": "Dec 2025",
+      "text": "Attended NeurIPS 2025 in San Diego — presented our <a href='https://arxiv.org/abs/2410.08868' target='_blank'>Single-Timescale Actor-Critic</a> poster and <a href='https://arxiv.org/abs/2506.00917' target='_blank'>Q-learning with Posterior Sampling</a> at the MLxOR workshop!"
+    },
+    {
+      "date": "Nov 2025",
+      "text": "Started as a student researcher at Meta — working on post-training algorithms for reasoning LLMs!"
+    },
+    {
       "date": "Oct 2025",
-      "text": "Presenting <a href='https://arxiv.org/abs/2506.00917' target='_blank'>Posterior Sampling for Q-learning</a> at INFORMS 2025!"
+      "text": "Presenting <a href='https://arxiv.org/abs/2506.00917' target='_blank'>Posterior Sampling for Q-learning</a> at INFORMS 2025 in Atlanta!"
     },
     {
       "date": "Sept 2025",
       "text": "Single-timescale Actor-Critic <a href='https://arxiv.org/abs/2410.08868' target='_blank'>accepted</a> to NeurIPS 2025!"
     },
     {
+      "date": "July 2025",
+      "text": "Presented <a href='https://arxiv.org/abs/2407.13743' target='_blank'>Optimistic Q-learning</a> at COLT 2025 in Lyon, France!"
+    },
+    {
       "date": "May 2025",
       "text": "Average Q-learning <a href='https://arxiv.org/abs/2407.13743' target='_blank'>accepted</a> to COLT 2025!"
+    },
+    {
+      "date": "Fall 2024",
+      "text": "Awarded the Cheung-Kong Innovation Doctoral Fellowship by Columbia Engineering!"
     }
   ],
 
