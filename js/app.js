@@ -22,10 +22,7 @@ function renderPage(data) {
     
     // Render Selected Papers
     renderPapers(data.selectedPapers);
-    
-    // Render Working Papers
-    renderWorkingPapers(data.workingPapers);
-    
+
     // Render News
     renderNews(data.news);
     
@@ -119,26 +116,6 @@ function renderPapers(papers) {
                 <div class="paper-title">${titleHTML}</div>
                 <div class="paper-authors">${paper.authors}</div>
                 <div class="paper-venue">${paper.venue}</div>
-            </div>
-        `;
-    }).join('');
-    
-    papersContent.innerHTML = papersHTML;
-}
-
-function renderWorkingPapers(papers) {
-    const papersContent = document.getElementById('working-papers-content');
-    
-    const papersHTML = papers.map(paper => {
-        const titleHTML = paper.url 
-            ? `<a href="${paper.url}" target="_blank">${paper.title}</a>`
-            : paper.title;
-            
-        return `
-            <div class="paper">
-                <div class="paper-title">${titleHTML}</div>
-                <div class="paper-authors">${paper.authors}</div>
-                <div class="paper-status">${paper.status}</div>
             </div>
         `;
     }).join('');

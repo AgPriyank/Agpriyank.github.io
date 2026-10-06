@@ -246,12 +246,6 @@ h3 {
     font-size: 0.9em;
 }
 
-.paper-status {
-    color: #888;
-    font-style: italic;
-    font-size: 0.9em;
-}
-
 /* View All Publications Button */
 .view-all-btn {
     display: inline-block;

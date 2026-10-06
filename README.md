@@ -33,7 +33,6 @@ agpriyank.github.io/
   - Sidebar moves to top on mobile (profile + news)
   - Single column layout on narrow screens
 - **Selected Papers** - curated highlights (no boxes)
-- **Working Papers** - under review papers (no boxes)
 - **Responsive design** - layout adapts at 900px breakpoint
 
 ## 🚀 Quick Setup
@@ -82,16 +81,6 @@ Your site will be live at `https://agpriyank.github.io/` in a few minutes!
 }
 ```
 
-#### Adding a working paper (under review):
-```json
-{
-  "title": "Your Paper Title",
-  "authors": "Author1, Author2",
-  "status": "Under review",
-  "url": "https://arxiv.org/..."
-}
-```
-
 #### Updating your bio:
 Edit the `paragraphs` array in the `about` section. You can use HTML tags like `<a>` for links.
 
@@ -130,7 +119,7 @@ You can change these emoji symbols to any other unicode characters you prefer.
 ### Layout structure:
 **Desktop (>900px):**
 - Left sidebar (narrower - 280px): Profile (photo, name, contact) + News
-- Right column (wider): About Me, Selected Papers, Working Papers
+- Right column (wider): About Me, News, Selected Papers
 - Sidebar is sticky (stays visible while scrolling)
 - All news items visible with scroll in sidebar
 

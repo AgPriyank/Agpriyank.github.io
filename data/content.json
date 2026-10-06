@@ -76,6 +76,12 @@
 
   "selectedPapers": [
     {
+      "title": "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information",
+      "authors": "Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou, Jalaj Bhandari, Kavosh Asadi, Daniel Jiang, Aditya Modi",
+      "venue": "MLxOR Workshop at NeurIPS 2026",
+      "url": "https://arxiv.org/abs/2607.19313"
+    },
+    {
       "title": "Q-learning with Posterior Sampling",
       "authors": "Priyank Agrawal, Shipra Agrawal, Azmat Azati",
       "venue": "ICLR 2026",
@@ -110,21 +116,6 @@
       "authors": "Priyank Agrawal, Theja Tulabandhula, Vashist Avadhanula",
       "venue": "European Journal of Operational Research",
       "url": "https://arxiv.org/pdf/2011.14033.pdf"
-    }
-  ],
-
-  "workingPapers": [
-    {
-      "title": "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information",
-      "authors": "Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou, Jalaj Bhandari, Kavosh Asadi, Daniel Jiang, Aditya Modi",
-      "status": "arXiv preprint, July 2026",
-      "url": "https://arxiv.org/abs/2607.19313"
-    },
-    {
-      "title": "Post-training algorithms for long-horizon tasks",
-      "authors": "",
-      "status": "In preparation — accelerating credit assignment under sparse rewards and limited environment access",
-      "url": ""
     }
   ],
 
