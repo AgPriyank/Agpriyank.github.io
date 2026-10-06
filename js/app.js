@@ -106,15 +106,24 @@ function renderNews(newsItems) {
 function renderPapers(papers) {
     const papersContent = document.getElementById('papers-content');
     
-    const papersHTML = papers.map(paper => {
-        const titleHTML = paper.url 
+    const papersHTML = papers.map((paper, i) => {
+        const titleHTML = paper.url
             ? `<a href="${paper.url}" target="_blank">${paper.title}</a>`
             : paper.title;
 
-        const linksHTML = paper.links
-            ? `<div class="paper-links">${paper.links.map(link =>
-                `<a href="${link.url}" target="_blank">${link.text}</a>`
-              ).join(' · ')}</div>`
+        const linkItems = (paper.links || []).map(link =>
+            `<a href="${link.url}" target="_blank">${link.text}</a>`
+        );
+        if (paper.details) {
+            linkItems.push(`<button type="button" class="details-toggle" aria-expanded="false" aria-controls="paper-details-${i}">details</button>`);
+        }
+
+        const linksHTML = linkItems.length
+            ? `<div class="paper-links">${linkItems.join(' · ')}</div>`
+            : '';
+
+        const detailsHTML = paper.details
+            ? `<div class="paper-details" id="paper-details-${i}" hidden>${paper.details}</div>`
             : '';
 
         return `
@@ -123,11 +132,22 @@ function renderPapers(papers) {
                 <div class="paper-authors">${paper.authors}</div>
                 <div class="paper-venue">${paper.venue}</div>
                 ${linksHTML}
+                ${detailsHTML}
             </div>
         `;
     }).join('');
-    
+
     papersContent.innerHTML = papersHTML;
+
+    // Expand / collapse paper details
+    papersContent.querySelectorAll('.details-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const details = document.getElementById(button.getAttribute('aria-controls'));
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', String(!expanded));
+            details.hidden = expanded;
+        });
+    });
 }
 
 function renderFooter(personal) {
