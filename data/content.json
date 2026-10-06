@@ -84,7 +84,7 @@
         { "text": "code", "url": "https://github.com/AgPriyank/OC-GRPO" },
         { "text": "project page", "url": "https://agpriyank.github.io/OC-GRPO/" }
       ],
-      "details": "It samples rollouts with hints and applies a per-token importance-sampling correction, so training still optimizes for the problem without hints. I implemented it on a patched veRL / vLLM stack and ran experiments on models up to 14B parameters. The <a href='https://github.com/AgPriyank/OC-GRPO' target='_blank'>code</a> and <a href='https://agpriyank.github.io/OC-GRPO/' target='_blank'>project page</a> are public."
+      "details": "It samples rollouts with hints and applies a per-token importance-sampling correction, so training still optimizes for the problem without hints. I implemented it on a patched veRL / vLLM stack and ran experiments on models up to 14B parameters."
     },
     {
       "title": "Q-learning with Posterior Sampling",
