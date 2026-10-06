@@ -29,6 +29,10 @@
 
   "news": [
     {
+      "date": "Sept 2026",
+      "text": "<a href='https://arxiv.org/abs/2607.19313' target='_blank'>Off-Context GRPO</a> accepted to the <a href='https://mlxor-2026.github.io/' target='_blank'>MLxOR workshop</a> at NeurIPS 2026 — see you in Atlanta in December!"
+    },
+    {
       "date": "July 2026",
       "text": "New preprint: <a href='https://arxiv.org/abs/2607.19313' target='_blank'>Off-Context GRPO</a> — learning to reason on hard problems using privileged information, from my work at Meta!"
     },
