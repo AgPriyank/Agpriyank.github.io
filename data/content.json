@@ -4,7 +4,7 @@
     "title": "PhD Candidate",
     "department": "Industrial Engineering and Operations Research",
     "institution": "Columbia University",
-    "tagline": "RL theory · LLM post-training · Agentic AI",
+    "tagline": "RL for LLMs · Post-training · Agentic AI",
     "photo": "IMG_20210703_190713.jpg",
     "email": "pa2608@columbia.edu",
     "cv": "Priyank_Agrawal_Resume.pdf",
@@ -20,10 +20,10 @@
 
   "about": {
     "paragraphs": [
-      "Hi! Welcome to my website. I am a final-year PhD candidate at Columbia University, where I work with the fabulous <a href='http://www.columbia.edu/~sa3305/' target='_blank'>Shipra Agrawal</a>. I love discovering connections between reinforcement learning and modern AI systems, and thinking about how to improve decision-making in the wild.",
-      "Most recently, I was a student researcher at Meta (Nov 2025 – Apr 2026), designing RLVR post-training algorithms for reasoning LLMs — including <a href='https://arxiv.org/abs/2607.19313' target='_blank'>Off-Context GRPO</a>, which leverages privileged information to learn on hard problems. On the theory side, I prove guarantees for RL algorithms — planning and exploration, regret and sample-complexity analysis for Q-learning with posterior sampling and optimism, and actor-critic convergence. To me these are one agenda: exploration, credit assignment, and decision-making under uncertainty are exactly the algorithm-design questions that agentic AI systems run on. My current interests span LLM post-training (RLVR, RLHF, reward modeling), agent harness design, and inference-time optimization.",
-      "My research is supported in part by a <a href='https://giving.columbia.edu/tang-family-gives-20-million-establish-tang-fund-engineering-innovations-financial-technology' target='_blank'>Tang Family Fellowship</a> and a <b>Cheung-Kong Innovation Doctoral Fellowship</b>. Before Columbia, I earned a Master's in Computer Science from the University of Illinois Urbana-Champaign in <a href='https://nanjiang.cs.illinois.edu/' target='_blank'>Nan Jiang</a>'s RL theory group, and in the past I was a strategist at Goldman Sachs.",
-      "<a href='mailto:pa2608@columbia.edu'>Reach out</a> if you find all of the above interesting too!"
+      "I'm a final-year PhD candidate at Columbia University, advised by <a href='http://www.columbia.edu/~sa3305/' target='_blank'>Shipra Agrawal</a>. I work on reinforcement learning for LLMs, from principled algorithm design to multi-GPU training runs.",
+      "As a student researcher at <b>Meta</b> (Nov 2025 – Apr 2026), I built <a href='https://arxiv.org/abs/2607.19313' target='_blank'>Off-Context GRPO</a>, an RLVR method for problems a model can't yet solve. It samples rollouts with hints and applies a per-token importance-sampling correction, so training still optimizes for the problem without hints. I implemented it on a patched veRL / vLLM / Ray stack and ran experiments on models up to 14B parameters. The <a href='https://github.com/AgPriyank/OC-GRPO' target='_blank'>code</a> and <a href='https://agpriyank.github.io/OC-GRPO/' target='_blank'>project page</a> are public.",
+      "I've also designed principled RL algorithms — Q-learning with optimism and with posterior sampling, and single-timescale actor-critic — published at COLT 2025, ICLR 2026, and NeurIPS 2025. I'm now working on credit assignment for long-horizon agentic tasks with sparse rewards and expensive environment access.",
+      "Before Columbia, I did an MS in Computer Science at UIUC with <a href='https://nanjiang.cs.illinois.edu/' target='_blank'>Nan Jiang</a> and built high-throughput, low-latency risk systems at Goldman Sachs. <a href='mailto:pa2608@columbia.edu'>Reach out</a> if you'd like to chat!"
     ]
   },
 
@@ -79,7 +79,11 @@
       "title": "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information",
       "authors": "Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou, Boris Vidolov, Jalaj Bhandari, Kavosh Asadi, Daniel Jiang, Aditya Modi",
       "venue": "MLxOR Workshop at NeurIPS 2026",
-      "url": "https://arxiv.org/abs/2607.19313"
+      "url": "https://arxiv.org/abs/2607.19313",
+      "links": [
+        { "text": "code", "url": "https://github.com/AgPriyank/OC-GRPO" },
+        { "text": "project page", "url": "https://agpriyank.github.io/OC-GRPO/" }
+      ]
     },
     {
       "title": "Q-learning with Posterior Sampling",

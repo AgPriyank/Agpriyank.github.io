@@ -110,12 +110,19 @@ function renderPapers(papers) {
         const titleHTML = paper.url 
             ? `<a href="${paper.url}" target="_blank">${paper.title}</a>`
             : paper.title;
-            
+
+        const linksHTML = paper.links
+            ? `<div class="paper-links">${paper.links.map(link =>
+                `<a href="${link.url}" target="_blank">${link.text}</a>`
+              ).join(' · ')}</div>`
+            : '';
+
         return `
             <div class="paper">
                 <div class="paper-title">${titleHTML}</div>
                 <div class="paper-authors">${paper.authors}</div>
                 <div class="paper-venue">${paper.venue}</div>
+                ${linksHTML}
             </div>
         `;
     }).join('');
