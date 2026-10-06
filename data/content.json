@@ -77,7 +77,7 @@
   "selectedPapers": [
     {
       "title": "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information",
-      "authors": "Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou, Jalaj Bhandari, Kavosh Asadi, Daniel Jiang, Aditya Modi",
+      "authors": "Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou, Boris Vidolov, Jalaj Bhandari, Kavosh Asadi, Daniel Jiang, Aditya Modi",
       "venue": "MLxOR Workshop at NeurIPS 2026",
       "url": "https://arxiv.org/abs/2607.19313"
     },
@@ -109,7 +109,7 @@
       "title": "Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location",
       "authors": "Priyank Agrawal, Eric Balkanski, Vasilis Gkatzelis, Tingting Ou, and Xizhi Tan",
       "venue": "ACM EC 2022; extended version accepted to Mathematics of Operations Research",
-      "url": "https://arxiv.org/abs/2202.04080"
+      "url": "https://arxiv.org/abs/2204.01120"
     },
     {
       "title": "A Tractable Online Learning Algorithm for the Multinomial Logit Contextual Bandit",
